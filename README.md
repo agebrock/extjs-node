@@ -1,20 +1,33 @@
-# dojo-node
-a lightwave dojo framework wrapper for node.js
-use the rich framework components in your node environment.
+Untouched libarary with a little adapter to run on NodeJS 
 
-## Compatibility
-* tested from node 0.2.6 to 0.4
-
-## Installation
-### NPM
-* npm install dojo-node
+* No DOM required
+* uses the original Ext.require funktion (working dependency system) 
 
 
-### do it yourself
-* $ npm install htmlparser
-* $ git clone git@github.com:agebrock/dojo-node.git
-* $ cd dojo-node
-* node test/test.js
+Installation:
+npm install extjs-node
+
+
+Usage: 
+
+require("extjs-node");
+
+Ext.require(['Ext.data.Model','Ext.data.reader.Json','Ext.data.writer.Json',"Ext.data.proxy.Memory"]);
+
+
+Ext.define("Mock", {
+           extend: "Ext.data.Model",
+           fields: ['name'],
+           proxy: {
+           	   type: 'memory'
+           	   }
+});
+
+var h = Mock.create({name:"Agebrock"});
+console.dir(h);
+
+
+
 
 
 

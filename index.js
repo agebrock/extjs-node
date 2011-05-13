@@ -30,7 +30,6 @@ var combineFiles = function(prefix, fileList){
 
 var sourceList = combineFiles(ext_core_path, sourceCollection);
 
-sourceList.push(fs.readFileSync(__dirname + "/util/index.js"));
 eval(sourceList.join(" "))
 
 
