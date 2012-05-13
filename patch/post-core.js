@@ -1,4 +1,5 @@
 
+
 Ext.Loader.setConfig({
     enabled: true,
 	paths: {
@@ -32,6 +33,4 @@ Ext.callback = function(callback, scope, args, delay){
         }
     }
 };
-
-
 

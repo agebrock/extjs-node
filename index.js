@@ -54,7 +54,7 @@ eval(src);
 
 Ext.nodejs = {};
 
-Ext.nodejs.writeState = function(path){
+Ext.nodejs.build = function(path){
 
     path = path || 'extjs-node.js';
 
@@ -74,8 +74,9 @@ Ext.nodejs.writeState = function(path){
 }
 
 
+//required since 4.1
+module.exports = Ext;
 
-//module.exports = require(__dirname + "/core");
 
 
 

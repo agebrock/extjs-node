@@ -1,14 +1,26 @@
 {
   "name": "extjs-node",
   "description": "ExtJS framework",
-  "keywords": ["framework", "web", "extjs"],
-  "version": "0.0.1",
-  "repository": "git@github.com:agebrock/extjs-node.git",
-  "author": "Agebrock <christoph.hagenbrock@googlemail.com>",
+  "keywords": [
+    "framework",
+    "web",
+    "extjs"
+  ],
+  "version": "0.0.2rc2",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:agebrock/extjs-node.git"
+  },
+  "author": {
+    "name": "Agebrock",
+    "email": "christoph.hagenbrock@googlemail.com"
+  },
   "dependencies": {},
-  "main": "index",
-  "engines": { "node": ">= 0.4.0" },
+  "main" : "index",
+  "engines": {
+    "node": ">= 0.4.0"
+  },
   "scripts": {
-        "install": "sh install.sh"
-      }
+    "install": "sh install.sh"
+  }
 }
