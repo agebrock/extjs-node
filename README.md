@@ -1,30 +1,56 @@
-Untouched libarary with a little adapter to run on NodeJS 
-
-* No DOM required
-* uses the original Ext.require funktion (working dependency system) 
+This modules enables you to build your own extjs serverside modules.
 
 
-Installation:
-npm install extjs-node
+After building your module no global "Ext" scope is used.
+
+Requirements 
+You need a working "unzip" binary (used by "install.sh").
 
 
-Usage: 
+Installation
+#git clone git@github.com:agebrock/extjs-node.git
+#git checkout builder
+#npm install
+ 
+or
 
-require("extjs-node");
+"#npm install node-extjs@0.0.2rc2"
+  
 
-Ext.require(['Ext.data.Model','Ext.data.reader.Json','Ext.data.writer.Json',"Ext.data.proxy.Memory"]);
+Trouble ?
+If your system does not provide unzip and you don't want to change it,
+you need to put the extjs sources in into the folder "./src/ext".
+check "install.sh" for details.
 
 
-Ext.define("Mock", {
-           extend: "Ext.data.Model",
-           fields: ['name'],
-           proxy: {
-           	   type: 'memory'
-           	   }
-});
+Useage:
 
-var h = Mock.create({name:"Agebrock"});
-console.dir(h);
+	Ext = require("../index.js");
+	Ext.require("Ext.data.Model");
+	
+	//calling the build method will write the module to "$PWD/extjs-node.js"
+	//this is useful if you plan to install the builder systemwide 
+	Ext.nodejs.build();
+	
+	Ext.nodejs.build("/path/to/builded/extjs-node.js");
+	
+	
+Notice the global Ext definition, currently we need that global for "Ext.data.Model" to find Ext while building.
+--BUT--
+requireing "/path/to/builded/extjs-node.js" will not define any globals. 
+
+
+
+Thanks for trying.
+
+	
+
+
+
+
+
+ 
+
 
 
 
