@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/agebrock/extjs-node.png)](http://travis-ci.org/agebrock/extjs-node)
 Untouched libarary with a little adapter to run on NodeJS 
 
 * No DOM required
