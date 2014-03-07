@@ -1,7 +1,7 @@
 Untouched libarary with a little adapter to run on NodeJS 
 
 * No DOM required
-* uses the original Ext.require funktion (working dependency system) 
+* uses the original Ext.require function (working dependency system) 
 
 
 Installation:
