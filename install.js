@@ -2,7 +2,6 @@ var Download = require('download');
 var VERSION = '4.1.0'
 var path = require('path');
 var fs = require('fs');
-var unzip = require('unzip');
 var destFolder = path.resolve('./src');
 var DecompressZip = require('decompress-zip');
 console.log('Downloading from http://cdn.sencha.io/ext-' + VERSION + '-gpl.zip');
