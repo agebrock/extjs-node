@@ -16,8 +16,8 @@
     "email": "christoph.hagenbrock@googlemail.com"
   },
   "dependencies": {
-    "download": "^0.2.1",
-    "unzip": "^0.1.9"
+    "decompress-zip": "0.0.8",
+    "download": "^0.2.1"
   },
   "main": "index",
   "engines": {
