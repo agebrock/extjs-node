@@ -15,12 +15,15 @@
     "name": "Agebrock",
     "email": "christoph.hagenbrock@googlemail.com"
   },
-  "dependencies": {},
-  "main" : "index",
+  "dependencies": {
+    "decompress": "^0.3.2",
+    "download": "^0.2.1"
+  },
+  "main": "index",
   "engines": {
     "node": ">= 0.4.0"
   },
   "scripts": {
-    "install": "sh install.sh"
+    "install": "node install.js"
   }
 }
