@@ -35,10 +35,9 @@ Useage:
 	Ext.nodejs.build("/path/to/builded/extjs-node.js");
 	
 	
-Notice the global Ext definition, currently we need that global for "Ext.data.Model" to find Ext while building.
---BUT--
-requireing "/path/to/builded/extjs-node.js" will not define any globals. 
+Notice the global Ext definition. currently we need that global for "Ext.data.Model" to find Ext while building.
 
+The builded result will not define any globals.
 
 
 Thanks for trying.
