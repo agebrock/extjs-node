@@ -1,0 +1,78 @@
+
+##############################################################################
+# Application files
+##############################################################################
+*rc$
+src
+
+##############################################################################
+# System files
+# @see https://help.github.com/articles/ignoring-files
+##############################################################################
+
+.envrc
+nohup.out
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+##############################################################################
+# Editor project files
+# @see https://github.com/github/gitignore/blob/master/Global/
+##############################################################################
+
+# Netbeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.idea
+
+# Eclipse
+.project
+.buildpath
+.settings
+
+# TextMate, Espresso, SublimeText
+*.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+
+
+##############################################################################
+# Node.js
+##############################################################################
+
+node_modules
+lib-cov
+coverage
+.grunt
+
+##############################################################################
+# Build lock files
+##############################################################################
+
+.done
+:q
+doc
+build/
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+output
+*.pyc
